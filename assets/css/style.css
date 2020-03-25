@@ -1,0 +1,32 @@
+* {
+    /* Box-model */
+    box-sizing: border-box;
+      /* Positioning */
+    margin: 0;
+      }
+
+
+
+  #title {
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    font-size: 2em;
+    color: #dedfe0;
+    letter-spacing: 1.5px;
+}
+
+#digitalClock, #amPm {
+    margin-top: 170px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    color: #dedfe0;
+}
+
+#hexColor {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    text-align: center;
+    color:transparent;
+}
