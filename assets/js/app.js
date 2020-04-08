@@ -20,7 +20,10 @@ function digiClock() {
     let minutes = date.getMinutes().toString();
     let seconds = date.getSeconds().toString();
     let amPM = hours < 12 ? "PM" : "AM";
-    hours = hours ? hours : 12;
+
+    if (hours > 12) {
+        hours = hours - 12;
+    }
 
     if (hours.length < 2) {
         hours = "0" + hours;
@@ -46,7 +49,5 @@ function digiClock() {
 digiClock();
 setInterval(digiClock, 1000);
 
-hours.style.backgroundColor = "#051980"
-hours.style.border = "2px solid white";
 
 
