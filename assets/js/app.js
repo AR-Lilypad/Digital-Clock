@@ -16,9 +16,9 @@ let color = document.getElementById("hexColor");
 
 function digiClock() {
     const date = new Date();
-    let hours = (date.getHours() % 12).toString();
-    let minutes = date.getMinutes().toString();
-    let seconds = date.getSeconds().toString();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
     let amPM = hours < 12 ? "AM" : "PM";
 
     if (hours > 12) {
