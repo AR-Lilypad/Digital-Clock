@@ -19,10 +19,10 @@ function digiClock() {
     let hours = (date.getHours() % 12).toString();
     let minutes = date.getMinutes().toString();
     let seconds = date.getSeconds().toString();
-    let amPM = hours < 12 ? "PM" : "AM";
+    let amPM = hours < 12 ? "AM" : "PM";
 
     if (hours > 12) {
-        hours = hours - 12;
+        hours = hours - 12 && amPM == PM;
     }
 
     if (hours.length < 2) {
